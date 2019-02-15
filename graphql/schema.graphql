@@ -1,10 +1,15 @@
-type exPerson {
+# url과 비슷
+
+type Person {
+    id: Int!
     name: String!
     age: Int!
     gender: String!    
 }
 
 type Query {
-    person: exPerson!
+    person(id: Int!): Person
+    people: [Person]!
+    
 }
 
