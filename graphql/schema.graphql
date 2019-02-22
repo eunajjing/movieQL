@@ -1,15 +1,13 @@
 # url과 비슷
 
-type Person {
-    id: Int!
-    name: String!
-    age: Int!
-    gender: String!    
+type Movie {
+    rank: String!
+    movieNm: String!
+    openDt: String!
+    audiAcc: String!
 }
 
 type Query {
-    person(id: Int!): Person
-    people: [Person]!
-    
+    movies(targetDt: Int!): [Movie]!
 }
 
